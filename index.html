@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sections */
+main section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+
+/* Blog Posts Styling with Images */
+.post {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 15px;
+}
+
+.post img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.post h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.post p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+
+#contact {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+#contact ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+#contact ul li a:hover {
+    color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+#footer {
+  background: #111111;
+}
+
+#footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  min-height: 160px;
+  text-align: center;
+}
+
+#footer a {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+#footer a:hover {
+  opacity: 0.6;
+}
+
+#footer .social {
+  margin: 0.9rem 0;
+}
+
+#footer .social img {
+  width: 20px;
+  height: 20px;
+}
+
+#footer .social a {
+  margin: 0 0.5rem;
+}
+
+#footer p {
+  font-size: 0.8rem;
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+               
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <h2>Welcome to My Blog</h2>
+            <p>
+
+                I'm a passionate front-end developer dedicated to crafting visually appealing and user-friendly web experiences. Through this blog, I aim to share my journey, tips, and tutorials about HTML, CSS, JavaScript, and everything related to front-end development.
+                
+                Whether you're a fellow developer, a curious learner, or someone exploring the tech world, I hope you find value in the content I share. Stay tuned for insights into web design trends, coding best practices, and solutions to common challenges in the world of front-end development.
+                
+                Let's build something amazing together! 🚀"</p>
+        </section>
+
+        
+
+        <section id="posts">
+            <h2>Latest Posts</h2>
+                
+                <div class="post">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ0AAAC7CAMAAABIKDvmAAAAkFBMVEX////5+flOj/7d3d3v7+/y8vL8/Pz29vbr6+vm5ubX19dHjP7Y5Ps5hPuVtvjU1NRYk/eIrvfg4OB5eXl/f3+fn5+rq6uHh4eUlJS4uLikpKTKyspwcHC/v79ra2u1tbVbW1uLi4tMTEzq8f2Bqfe90fpAif8tLS0bGxtkZGRWlP6syP63zv6RkZHh6v1KjPa6x37CAAAFo0lEQVR4nO3d63ajNhQFYKmAuKStMxgwxrc4TTOdJG7f/+1q4ybrVBKj42UbkL33z1lnAH0WoEGCEQJBEARBBovyKlfGkEO377TI62rE1938pRNddevqupu/eKBBAw0aaNBAg6YfDRVGI07Ys4a88o38vMRfoy5oQOP/gQYNNGigQQMNGmjQQIMGGjTQoIEGDTRooEEDDRpo0ECDBho00KCBBg00aKBBAw2a3jXiodci/CxRzxoiHnW+jhczjzTQoIEGDTRooEEDDZp+NOJJ5sqkLU0Yhe3oIHfWZdlJe+5RI5oErmTJoTB11gWTdlybMQoPdaG7MOt7NUvEOKbTNNx1Rw3OnqEBDWhAwzuN/MIauWWTdg3LnofWyHeX1cibNG1YGvl0MTqNtMj13+g8jc2sLPUt2jUCc8/DauSr2fOs1g7qvDMlKZ4To9C6562554H7Rs7tG3lZVMZPbusbZbmZcfpGnk7G1jcORx/osfeN3Dj2jjMlTedGoXXPs/FdN3BPceSexxvQgAY0oOHSGO7ZF2PPfWuo1J22kTGjsN1i6K5LTtpzjxq+BBo00KCBBg00aKBB09eb4+4c77CMwnbmMWIUHur+ePnmyMuffWvIWLpyXG8UOevkcZVW6C5sNX797cGR19/vSeMXRx6gAQ1o+KDRtoelYdbZNZRZ54uGyuuybLTDt2qIclbpzbRpqLyYGb3FE41901W1UG4NtahEnWuFNg2xFuFUZ/NGQ0rj2K0awU40KUNDFUIUWp0/Gmqud42OM+XH1GCz9o3lZPHdWw1RSD02DVGnop4w+oaU82zmr4bxi9s1pkoEFUtDKH+vG2rG0lD5slnqN13rmVKXy8TbvmGJ9bqhZKi3sWO8EUqj8OY0bLm5sSg0oAENaDg1FOOzlsd/2DI+gNluMWYWjlFjuECDBho00KCBBg00aMaowZ55lMwJRc4U5WjvsBh9QQMa0IDGZTWM53bnzTxKJTx+EijmrPmUuKkavdCqIVaFsUVvNMTiL9ZcW1pK49yxzrWtGrHQC33RUGGxY2lkG33esWMGYSpi45TyRWN/8MaEin0etqieWBrL7a72dHZJVdP504oxR39YlrHQrwdWjR9CFPo55YmGDPN0qZ8CVo39X1/pbB1nitjqtxlfNPa/OetMEXVdrVmrWYJlZWzRGw1L7CsWwpS50ik2C29OwzJK6xqLmoU3qGHmFkfm0IAGNEyNiz4XPemNjDFqDBdo0Ggab4+Pj2/Q+Gz5+/v7ywM0/mv6Iegbny3/+Pj4hr7x2fTX19fB+wZjbU90P2t7MPqCBjSgAY2LaphPqrpmHnnvIEh/33ncN31ldAL7DEK1M6aXrBphXRrdzxcNNVkHnHlYVU3kE0dDNUnq77tLYsPSkEqJrf6bd70dvPRXo+JptLNoHA3RfDe2eHsaojAK7VfROPe4b2xy1nv0olwZN5Wue8pU+xNvNNR8abzmap15rJ43DefNcbVebQpv+0aapkZXt/WNw/fvOG+ASpVlHq90Usx1X8os7Fj3hZnHnwca0ICG1xrDfQtujBrDBRo00KCBBg00aKBBM0oNxn9n3N44Fff/PZbMwjFqyIh58Iy643gjZBSOVgNjUWhAAxrnanCffbE1LJ9b9UYjqia8b89yNUS1rXzVEOtgpj/VPUtDFKt4oc+8+KKRliLWXzU6SyPcb804+TzRUIuVEvr0xzkahw2ahfersfFXQya1iLY8DXORivUquhbK23uKWAZT/ZrXoWF+pNZ6Fa22ean3D180ZDznrlgwvubccYcN5pm387D80Rf3nUfLFKU/GmbueWQODWiMQONhfBqJe56w1WDMPCZHDUbhoe7vfx4deXvvW8OXQIMGGjTQoIEGDTRooEEDDRpo0Fz5cKFBE4eJRwmlu0W0caeGs5BxROEsrPjKvzYa6ARHPHheAAAAAElFTkSuQmCC" alt="Front-End Projects">
+                    <p>Learn about projects that showcase your skills and help you stand out as a web developer.</p>
+                </div>
+        
+                <div class="post">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNwubhhXsU7OPw1eIjOp-jzprF8tidjzaqfA&s" alt="Weather App Tutorial">
+                    <p>A step-by-step guide to creating a weather application using APIs and JavaScript.</p>
+                </div>
+        
+                <div class="post">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUQyc6xJhR6xBu71KbQO7F0mIrtIhHOfhNZg&s" alt="CSS Grid and Flexbox">
+                    <p>Master modern layout techniques with this practical guide.</p>
+                </div>
+        
+        </section>
+        
+
+
+       <section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hi there! 👋 I'm a passionate <strong>front-end developer</strong> and blogger who loves creating beautiful, functional, and user-friendly web experiences. 
+    </p>
+    <p>
+        With expertise in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, I enjoy building projects that not only look good but also solve real-world problems. My journey as a developer has been fueled by curiosity and a constant desire to learn and grow.
+    </p>
+    <p>
+        Through this blog, I share insights, tutorials, and tips on web development to help others in their journey. Whether you're a beginner learning to code or an experienced developer looking for inspiration, I hope my content adds value to your path.
+    </p>
+    <p>
+        When I'm not coding, you can find me exploring the latest tech trends, experimenting with new designs, or enjoying a good cup of coffee ☕. Let's connect, share ideas, and grow together!
+    </p>
+</section>
+
+
+      
+
+
+    </main>
+
+    
+
+
+    <footer id="footer">
+        <div class="container">
+          <!-- Social links -->
+          <div class="social">  <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#">mraheelraza11@gmail.com</a>
+
+          </div>
+          <!-- Attribution -->
+          <div class="attribution">
+    
+          </div>
+          <p>Copyright &copy; Raheel<span id="datee"></span>, All rights reserved</p>
+        </div>
+      </footer>
+
+
+
+    <script>
+
+
+// Sample blog posts
+const posts = [
+    {
+        title: "How to Build a Blog with HTML, CSS, and JavaScript",
+        content: "Learn how to create a responsive and interactive blog in just a few steps!"
+    },
+    {
+        title: "Top 10 Tips for Web Development",
+        content: "Discover the most important tips to become a successful web developer."
+    },
+    {
+        title: "Why JavaScript is Essential for Modern Web Development",
+        content: "JavaScript powers the interactivity of the modern web. Here's why it matters."
+    }
+];
+
+// Dynamically add blog posts
+const blogPostsContainer = document.getElementById('blog-posts');
+
+posts.forEach(post => {
+    const postDiv = document.createElement('div');
+    postDiv.classList.add('post');
+    postDiv.innerHTML = `
+        <h3>${post.title}</h3>
+        <p>${post.content}</p>
+    `;
+    blogPostsContainer.appendChild(postDiv);
+});
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
